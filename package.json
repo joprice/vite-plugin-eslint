@@ -21,7 +21,7 @@
     "dev": "npm run build -- --watch ./src",
     "lint": "eslint ./src --ext .js,.ts",
     "build": "ncc",
-    "publish": "ncc build src/index.ts -o dist",
+    "publish": "tsup",
     "release": "standard-version"
   },
   "keywords": [
