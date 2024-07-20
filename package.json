@@ -20,8 +20,8 @@
   "scripts": {
     "dev": "npm run build -- --watch ./src",
     "lint": "eslint ./src --ext .js,.ts",
-    "build": "tsup",
-    "publish": "tsup",
+    "build": "ncc",
+    "publish": "ncc build src/index.ts -o dist",
     "release": "standard-version"
   },
   "keywords": [
@@ -41,10 +41,10 @@
   "dependencies": {
     "@rollup/pluginutils": "^5.1.0",
     "@types/eslint": "^8.4.5",
+    "@vercel/ncc": "^0.38.1",
     "rollup": "^4.19.0"
   },
   "devDependencies": {
-    "tsup": "^8.2.1",
     "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
@@ -52,8 +52,10 @@
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "picomatch": "^3.0.1",
     "prettier": "^2.7.1",
     "standard-version": "^9.5.0",
+    "tsup": "^8.2.1",
     "typescript": "^4.7.4",
     "vite": "^5.3.4"
   },
