@@ -21,6 +21,7 @@
     "dev": "npm run build -- --watch ./src",
     "lint": "eslint ./src --ext .js,.ts",
     "build": "tsup",
+    "publish": "tsup",
     "release": "standard-version"
   },
   "keywords": [
