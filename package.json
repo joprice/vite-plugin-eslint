@@ -41,7 +41,6 @@
   "dependencies": {
     "@rollup/pluginutils": "^5.1.0",
     "@types/eslint": "^8.4.5",
-    "@vercel/ncc": "^0.38.1",
     "rollup": "^4.19.0"
   },
   "devDependencies": {
